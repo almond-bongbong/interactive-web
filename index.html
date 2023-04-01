@@ -14,12 +14,30 @@
         overflow: hidden;
       }
       canvas {
-        background-color: orange;
+        filter: url(#gooey);
+        /*background-color: #000;*/
       }
     </style>
   </head>
   <body>
     <canvas id="canvas"></canvas>
+    <svg>
+      <defs>
+        <filter id="gooey">
+          <feGaussianBlur in="SourceGraphic" result="blur1" stdDeviation="20" />
+          <feColorMatrix
+            in="blur1"
+            mode="matrix"
+            values="
+            1 0 0 0 0
+            0 1 0 0 0
+            0 0 1 0 0
+            0 0 0 30 -15"
+            result="gooey"
+          />
+        </filter>
+      </defs>
+    </svg>
     <script type="module" src="index.js"></script>
   </body>
 </html>
