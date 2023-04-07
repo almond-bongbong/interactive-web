@@ -7,3 +7,27 @@ body {
   padding: 0;
   background: #000;
 }
+
+.ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50vh;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+
+.countdown {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.countdown > span {
+  position: absolute;
+  font-size: 7rem;
+  transform: scale(5);
+  opacity: 0;
+}
