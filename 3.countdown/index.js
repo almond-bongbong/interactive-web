@@ -63,5 +63,7 @@ window.addEventListener('load', () => {
 
 window.addEventListener('resize', init);
 window.addEventListener('click', () => {
+  const ring = document.querySelector('.ring');
+  ring.classList.add('fade-out');
   particles.forEach((p) => p.start());
 });
