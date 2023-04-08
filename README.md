@@ -2,5 +2,5 @@
 
 - [x] Particle
 - [x] Firework
-- [ ] Countdown
+- [x] Countdown
 - [ ] Confetti
