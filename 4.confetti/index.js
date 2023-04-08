@@ -56,6 +56,7 @@ function render() {
       p.update();
       p.draw(ctx);
       if (p.opacity <= 0) particles.splice(particles.indexOf(p), 1);
+      if (p.y > canvasHeight) particles.splice(particles.indexOf(p), 1);
     }
 
     then = now - (delta % interval);
@@ -73,5 +74,4 @@ window.addEventListener('resize', () => {
   init();
 });
 
-window.addEventListener('click', (e) => {
-});
+window.addEventListener('click', (e) => {});
