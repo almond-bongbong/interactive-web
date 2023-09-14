@@ -3,4 +3,4 @@
 - [x] Particle
 - [x] Firework
 - [x] Countdown
-- [ ] Confetti
+- [x] Confetti
